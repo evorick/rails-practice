@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Squirrels</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Breed</th>
+      <th>Age</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @squirrels.each do |squirrel| %>
+      <tr>
+        <td><%= squirrel.name %></td>
+        <td><%= squirrel.breed %></td>
+        <td><%= squirrel.age %></td>
+        <td><%= link_to 'Show', squirrel %></td>
+        <td><%= link_to 'Edit', edit_squirrel_path(squirrel) %></td>
+        <td><%= link_to 'Destroy', squirrel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Squirrel', new_squirrel_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @squirrel.name %>
+</p>
+
+<p>
+  <strong>Breed:</strong>
+  <%= @squirrel.breed %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @squirrel.age %>
+</p>
+
+<%= link_to 'Edit', edit_squirrel_path(@squirrel) %> |
+<%= link_to 'Back', squirrels_path %>
