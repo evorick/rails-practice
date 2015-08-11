@@ -69,6 +69,6 @@ class SquirrelsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def squirrel_params
-      params.require(:squirrel).permit(:name, :breed, :age)
+      params.require(:squirrel).permit(:name, :breed, :age, :owner)
     end
 end
