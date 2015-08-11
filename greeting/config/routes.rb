@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :countries
   get 'say/hello'
 
   get 'say/goodbye'
