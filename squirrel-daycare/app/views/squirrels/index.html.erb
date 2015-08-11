@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>ID</th>
       <th>Name</th>
       <th>Breed</th>
       <th>Age</th>
@@ -15,6 +16,7 @@
   <tbody>
     <% @squirrels.each do |squirrel| %>
       <tr>
+        <td><%= squirrel.id %></td>
         <td><%= squirrel.name %></td>
         <td><%= squirrel.breed %></td>
         <td><%= squirrel.age %></td>
