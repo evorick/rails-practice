@@ -45,7 +45,7 @@ gem 'thin'
 #Date and time formatting.
 gem 'stamp'
 
-
+gem 'starter_generators'
 
 group :development do
   # Quiet assets. Reduces noise in the log files.
