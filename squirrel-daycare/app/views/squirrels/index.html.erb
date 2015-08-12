@@ -28,7 +28,7 @@
               <td><%= squirrel.name %></td>
               <td><%= squirrel.breed %></td>
               <td><%= squirrel.age %></td>
-              <td><%= squirrel.owner %></td>
+              <td><%= squirrel.try(:owner).try(:name) %></td>
               <td><%= link_to 'Show', squirrel %></td>
               <td><%= link_to 'Edit', edit_squirrel_path(squirrel) %></td>
               <td><%= link_to 'Destroy', squirrel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
