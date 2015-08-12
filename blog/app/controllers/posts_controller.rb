@@ -71,4 +71,9 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:blog_title, :content, :author)
     end
+
+    def present_date
+      right_now = Time.right_now
+      @current_date = right_now.stamp("March 1, 1999")
+    end
 end
