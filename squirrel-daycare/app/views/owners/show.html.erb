@@ -10,5 +10,12 @@
   <%= @owner.phone %>
 </p>
 
+<h4 class="list-group-item-heading">Squirrel Name and Age</h2>
+<ul>
+<% @owner.squirrels.each do |squirrel| %>
+  <li><%= squirrel.name + " " + squirrel.age.to_s %></li>
+<% end %>
+</ul>
+
 <%= link_to 'Edit', edit_owner_path(@owner) %> |
 <%= link_to 'Back', owners_path %>

@@ -22,7 +22,7 @@
         </thead>
 
         <tbody>
-          <% @squirrels.each do |squirrel| %>
+          <% @squirrels.order('name').each do |squirrel| %>
             <tr>
               <td><%= squirrel.id %></td>
               <td><%= squirrel.name %></td>
@@ -39,7 +39,7 @@
 
       <br>
 
-      <%= link_to 'New Squirrel', new_squirrel_path %>
+      <%= link_to 'New Squirrel', new_squirrel_path, class: "btn btn-warning" %>
 
   </body>
 </html>

@@ -11,15 +11,15 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: 'form-control', placeholder: 'Name' %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :phone %><br>
-    <%= f.text_field :phone %>
+    <%= f.text_field :phone, class: 'form-control', placeholder: 'Phone Number' %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-warning" %>
   </div>
 <% end %>
