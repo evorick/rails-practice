@@ -12,12 +12,15 @@ namespace :db do
       Artist.populate 5..10 do |artist|
         artist.name = Faker::Name.first_name
         artist.genre_id = genre.id
+        artist.bio = Faker::Lorem.paragraph
 
         Song.populate 5..10 do |song|
           song.name = Faker::Company.catch_phrase
           song.artist_id = artist.id
 
         end #Song end
+
+      
       end #Artist end
     end # Genre end
 
