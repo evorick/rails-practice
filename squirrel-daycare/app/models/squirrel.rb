@@ -1,9 +1,9 @@
 class Squirrel < ActiveRecord::Base
   belongs_to :owner
+  belongs_to :breed
   
   validates :name, presence: true, uniqueness: true
 
-  validates :breed, presence: true
 
   validates :age, presence: true
 
